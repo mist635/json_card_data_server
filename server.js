@@ -7,9 +7,8 @@ const fetch = require("node-fetch");
 const app = express();
 const PORT = 3001;
 
-// CORS許可（Reactがlocalhost:5173の場合）
 app.use(cors({
-  origin: "http://localhost:5173"
+  origin: "*"
 }));
 app.use(express.json());
 
